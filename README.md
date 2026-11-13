@@ -43,7 +43,7 @@ All activities were performed in my own lab environment.
 
 Downloaded and imported the Kali Linux virtual machine into Oracle VirtualBox and started it successfully.
 
-![Kali Linux Login](screenshots/kali login.jpeg)
+![Kali Linux Login](screenshots/kali-login.jpeg)
 
 ### Step 2: Configure the Network Adapter
 
