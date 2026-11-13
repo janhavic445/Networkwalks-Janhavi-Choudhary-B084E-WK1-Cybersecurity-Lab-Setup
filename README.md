@@ -9,7 +9,7 @@ This project demonstrates Kali Linux setup in Oracle VirtualBox, NAT Network con
 
 Start the Kali Linux virtual machine and log in using your username and password.
 
-![Kali Linux Login](screenshots/kali-login.png)
+![Kali Linux Login](screenshots/kali login.png)
 
 ## 3. VirtualBox Network Configuration
 
