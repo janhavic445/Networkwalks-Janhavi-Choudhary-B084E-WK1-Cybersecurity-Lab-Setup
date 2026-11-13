@@ -1,21 +1,55 @@
 
-# Kali Linux Network Configuration and Connectivity Testing
+# Cybersecurity Lab Environment Setup
 
-## 1. Introduction
+![Cybersecurity](https://img.shields.io/badge/Skill-Cybersecurity-red)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-Virtualization-blue)
+![Kali Linux](https://img.shields.io/badge/Kali%20Linux-Lab-black)
+![Network](https://img.shields.io/badge/Network-NAT-green)
+![Internship](https://img.shields.io/badge/Networkwalks-Internship-orange)
 
-This project demonstrates Kali Linux setup in Oracle VirtualBox, NAT Network configuration, and internet connectivity testing using the ping command.
+---
 
-## 2. Kali Linux Login
+## Project Overview
 
-Start the Kali Linux virtual machine and log in using your username and password.
+This project is part of my Cybersecurity Internship. The objective was to set up a Kali Linux virtual machine using Oracle VirtualBox and configure its network connection for cybersecurity lab practice.
 
-![Kali Linux Login](screenshots/kali login.png)
+I deployed the virtual machine, configured the network adapter using NAT Network, and tested internet connectivity using the `ping` command.
 
-## 3. VirtualBox Network Configuration
+All activities were performed in my own lab environment.
 
-Configure Adapter 1 with the following settings:
+## Objectives
 
-| Setting | Value |
+- Deploy a Kali Linux virtual machine in VirtualBox.
+- Configure the network adapter using NAT Network.
+- Verify internet connectivity using the ping command.
+- Prepare the lab environment for future cybersecurity practicals.
+
+## Lab Environment
+
+| Component | Details |
+|---|---|
+| Host Operating System | Windows |
+| Hypervisor | Oracle VirtualBox |
+| Guest Operating System | Kali Linux |
+| Network Configuration | NAT Network |
+| Network Adapter | Intel PRO/1000 MT Desktop |
+| Connectivity Testing | Ping Command |
+
+---
+
+## Setup and Verification
+
+### Step 1: Deploy Kali Linux
+
+Downloaded and imported the Kali Linux virtual machine into Oracle VirtualBox and started it successfully.
+
+![Kali Linux Login](screenshots/kali-login.png)
+
+### Step 2: Configure the Network Adapter
+
+Configured Adapter 1 in VirtualBox with the following settings:
+
+| Setting | Configuration |
 |---|---|
 | Enable Network Adapter | Enabled |
 | Attached To | NAT Network |
@@ -24,36 +58,57 @@ Configure Adapter 1 with the following settings:
 | Promiscuous Mode | Allow All |
 | Cable Connected | Enabled |
 
-![VirtualBox Network Configuration](screenshots/nat-network-settings.png)
+![NAT Network Configuration](screenshots/nat-network-settings.png)
 
-## 4. Internet Connectivity Testing
+### Step 3: Test Network Connectivity
 
-Open the Kali Linux terminal and execute the following command:
+After configuring the network adapter, I used the `ping` command to test connectivity to Google.
+
+**Command used:**
 
 ```bash
 ping google.com
 ```
 
-### Output
+**Observed Output:**
 
-```text
-PING google.com (142.251.106.139) 56(84) bytes of data.
-64 bytes from ...: icmp_seq=1 ttl=115 time=5.89 ms
-64 bytes from ...: icmp_seq=2 ttl=115 time=8.50 ms
-64 bytes from ...: icmp_seq=3 ttl=115 time=6.09 ms
-64 bytes from ...: icmp_seq=4 ttl=115 time=8.30 ms
-```
+The terminal returned ICMP echo replies from Google's IP address, confirming that the Kali Linux virtual machine could reach the internet.
 
-![Ping Google Test](screenshots/google-ping.png)
+![Google Ping Test](screenshots/google-ping.png)
 
-## 5. Result
+---
 
-Successfully configured Kali Linux networking using NAT Network in Oracle VirtualBox.
+## Result
 
-Internet connectivity was verified through successful ICMP echo replies using the `ping google.com` command.
+- Successfully deployed Kali Linux in Oracle VirtualBox.
+- Configured the network adapter using NAT Network.
+- Verified internet connectivity through the ping command.
 
-## 6. Conclusion
+## Troubleshooting
 
-Kali Linux was successfully configured in Oracle VirtualBox, and internet connectivity was tested using the ping command.
+No major configuration issues prevented the virtual machine from accessing the internet.
 
-**Tools Used:** Kali Linux | Oracle VirtualBox | Terminal | Ping
+The ping output showed some duplicate responses and packet loss, which are worth investigating in further network testing.
+
+## What I Learned
+
+- How to deploy and run a Kali Linux virtual machine.
+- How virtualization works using Oracle VirtualBox.
+- How to configure a NAT Network adapter.
+- How to use the ping command for connectivity testing.
+- The importance of verifying network connectivity before performing cybersecurity practicals.
+
+## Legal and Ethical Notice
+
+This lab was configured for educational purposes in my own virtual environment.
+
+Any future security testing will be limited to systems I own or have explicit permission to test.
+
+---
+
+## Author
+
+**Janhavi Choudhary**
+
+Cybersecurity Enthusiast | Engineering Student
+
