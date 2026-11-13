@@ -43,7 +43,7 @@ All activities were performed in my own lab environment.
 
 Downloaded and imported the Kali Linux virtual machine into Oracle VirtualBox and started it successfully.
 
-![Kali Linux Login](screenshots/kali-login.png)
+![Kali Linux Login](screenshots/kali login.jpeg)
 
 ### Step 2: Configure the Network Adapter
 
@@ -58,7 +58,7 @@ Configured Adapter 1 in VirtualBox with the following settings:
 | Promiscuous Mode | Allow All |
 | Cable Connected | Enabled |
 
-![NAT Network Configuration](screenshots/nat-network-settings.png)
+![NAT Network Configuration](screenshots/nat-network-settings.jpeg)
 
 ### Step 3: Test Network Connectivity
 
